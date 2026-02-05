@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{be048040-1b03-4679-8dbe-309ed016fef6}</ProjectGuid>
+    <RootNamespace>enhance</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>enhance</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\Java\jdk1.8.0_202\include;C:\Program Files\Java\jdk1.8.0_202\include\win32;C:\Program Files\Java\jdk1.8.0_202\include\win32\bridge;$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)utils\jnihook-master\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk1.8.0_202\lib;$(ProjectDir)utils\minhook\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\Java\jdk1.8.0_202\include;C:\Program Files\Java\jdk1.8.0_202\include\win32;C:\Program Files\Java\jdk1.8.0_202\include\win32\bridge;$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)utils\jnihook-master\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk1.8.0_202\lib;$(ProjectDir)utils\minhook\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\Java\jdk1.8.0_202\include;C:\Program Files\Java\jdk1.8.0_202\include\win32;C:\Program Files\Java\jdk1.8.0_202\include\win32\bridge;$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)utils\jnihook-master\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk1.8.0_202\lib;$(ProjectDir)utils\minhook\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\Java\jdk-24\include;C:\Program Files\Java\jdk-24\include\win32;C:\Program Files\Java\jdk-24\include\win32\bridge;$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)utils\jnihook-master\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk-24\lib;$(ProjectDir)utils\minhook\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ENHANCE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>jvm.lib;opengl32.lib;libMinHook-x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ENHANCE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>jvm.lib;opengl32.lib;libMinHook-x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;ENHANCE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>jvm.lib;opengl32.lib;libMinHook-x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;ENHANCE_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp23</LanguageStandard>
+      <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>C:\Program Files\Java\jdk-24\lib\jvm.lib;opengl32.lib;libMinHook-x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="enhance\enhance.cpp" />
+    <ClCompile Include="enhance\hooks\Hook.cpp" />
+    <ClCompile Include="enhance\gui\GUI.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="enhance\modules\mace\mace.cpp" />
+    <ClCompile Include="enhance\modules\shield_breaker\shield_breaker.cpp" />
+    <ClCompile Include="utils\imgui\imgui.cpp" />
+    <ClCompile Include="utils\imgui\imgui_draw.cpp" />
+    <ClCompile Include="utils\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="utils\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="utils\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="utils\imgui\imgui_tables.cpp" />
+    <ClCompile Include="sdk\minecraft\minecraft.cpp" />
+    <ClCompile Include="sdk\minecraft\player\player.cpp" />
+    <ClCompile Include="sdk\minecraft\world\world.cpp" />
+    <ClCompile Include="sdk\minecraft\entity\entity.cpp" />
+    <ClCompile Include="sdk\minecraft\util\box.cpp" />
+    <ClCompile Include="sdk\classloader.cpp" />
+    <ClCompile Include="enhance\modules\hitbox\hitbox.cpp" />
+    <ClCompile Include="enhance\modules\aimassist\aimassist.cpp" />
+    <ClCompile Include="enhance\modules\triggerbot\triggerbot.cpp" />
+    <ClCompile Include="enhance\modules\pearl_catch\pearl_catch.cpp" />
+    <ClCompile Include="enhance\modules\reach\reach.cpp" />
+    <ClCompile Include="enhance\modules\reach\reach_hook.cpp" />
+    <ClCompile Include="enhance\modules\esp\esp.cpp" />
+    <ClCompile Include="enhance\utils\http_client.cpp" />
+    <ClCompile Include="enhance\utils\hwid.cpp" />
+    <ClCompile Include="enhance\utils\logger.cpp" />
+    <ClCompile Include="enhance\utils\token_storage.cpp" />
+    <ClCompile Include="utils\jnihook-master\src\jnihook.cpp" />
+    <ClCompile Include="utils\jnihook-master\src\classfile.cpp" />
+    <ClCompile Include="utils\jnihook-master\src\uuid.cpp" />
+    <ClCompile Include="enhance\modules\stun_slam\stun_slam.cpp" />
+    <ClCompile Include="enhance\modules\server_rotation\server_rotation.cpp" />
+    <ClCompile Include="enhance\modules\stap\stap.cpp" />
+    <ClCompile Include="enhance\modules\wtap\wtap.cpp" />
+    <ClCompile Include="enhance\modules\anchor_macro\anchor_macro.cpp" />
+    <ClCompile Include="enhance\modules\storage_esp\storage_esp.cpp" />
+    <ClCompile Include="enhance\modules\autocrystal\autocrystal.cpp" />
+    <ClCompile Include="enhance\modules\autototem\autototem.cpp" />
+    <ClCompile Include="enhance\modules\autojumpreset\autojumpreset.cpp" />
+    <ClCompile Include="enhance\modules\backtrack\backtrack.cpp" />
+    <ClCompile Include="enhance\modules\backtrack\backtrack_hook.cpp" />
+    <ClCompile Include="enhance\modules\gambling\gambling.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="enhance\enhance.h" />
+    <ClInclude Include="enhance\globals\globals.h" />
+    <ClInclude Include="enhance\hooks\Hook.h" />
+    <ClInclude Include="enhance\gui\GUI.h" />
+    <ClInclude Include="enhance\modules\mace\mace.h" />
+    <ClInclude Include="enhance\modules\shield_breaker\shield_breaker.h" />
+    <ClInclude Include="utils\imgui\imconfig.h" />
+    <ClInclude Include="utils\imgui\imgui.h" />
+    <ClInclude Include="utils\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="utils\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="utils\imgui\imgui_internal.h" />
+    <ClInclude Include="utils\imgui\imstb_rectpack.h" />
+    <ClInclude Include="utils\imgui\imstb_textedit.h" />
+    <ClInclude Include="utils\imgui\imstb_truetype.h" />
+    <ClInclude Include="sdk\includes.h" />
+    <ClInclude Include="sdk\mappings\mappings.hpp" />
+    <ClInclude Include="sdk\minecraft\minecraft.h" />
+    <ClInclude Include="sdk\minecraft\player\player.h" />
+    <ClInclude Include="sdk\minecraft\world\world.h" />
+    <ClInclude Include="sdk\minecraft\entity\entity.h" />
+    <ClInclude Include="sdk\minecraft\util\box.h" />
+    <ClInclude Include="sdk\classloader.h" />
+    <ClInclude Include="enhance\modules\hitbox\hitbox.h" />
+    <ClInclude Include="enhance\modules\aimassist\aimassist.h" />
+    <ClInclude Include="enhance\modules\triggerbot\triggerbot.h" />
+    <ClInclude Include="enhance\modules\pearl_catch\pearl_catch.h" />
+    <ClInclude Include="enhance\modules\reach\reach.h" />
+    <ClInclude Include="enhance\modules\reach\reach_hook.h" />
+    <ClInclude Include="enhance\modules\esp\esp.h" />
+    <ClInclude Include="enhance\utils\http_client.h" />
+    <ClInclude Include="enhance\utils\hwid.h" />
+    <ClInclude Include="enhance\utils\logger.h" />
+    <ClInclude Include="enhance\utils\token_storage.h" />
+    <ClInclude Include="utils\jnihook-master\include\jnihook.h" />
+    <ClInclude Include="utils\jnihook-master\src\classfile.hpp" />
+    <ClInclude Include="utils\jnihook-master\src\uuid.hpp" />
+    <ClInclude Include="enhance\modules\stun_slam\stun_slam.h" />
+    <ClInclude Include="enhance\modules\server_rotation\server_rotation.h" />
+    <ClInclude Include="enhance\modules\stap\stap.h" />
+    <ClInclude Include="enhance\modules\wtap\wtap.h" />
+    <ClInclude Include="enhance\modules\anchor_macro\anchor_macro.h" />
+    <ClInclude Include="enhance\modules\storage_esp\storage_esp.h" />
+    <ClInclude Include="enhance\modules\autocrystal\autocrystal.h" />
+    <ClInclude Include="enhance\modules\autototem\autototem.h" />
+    <ClInclude Include="enhance\modules\autojumpreset\autojumpreset.h" />
+    <ClInclude Include="enhance\modules\backtrack\backtrack.h" />
+    <ClInclude Include="enhance\modules\backtrack\backtrack_hook.h" />
+    <ClInclude Include="enhance\modules\gambling\gambling.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

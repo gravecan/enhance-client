@@ -1,0 +1,9 @@
+﻿  swapBuffers.cpp
+  wndproc.cpp
+C:\Projects\C++\mc internal\future\hooks\wndproc.cpp(25,24): warning C4244: 'return': conversion from 'LRESULT' to 'long', possible loss of data
+  Generating code
+  6 of 974 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    21 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  future.vcxproj -> C:\Projects\C++\mc internal\x64\Release\enhance.dll
